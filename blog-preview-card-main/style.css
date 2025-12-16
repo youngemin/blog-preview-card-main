@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+:root{
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+}
+*{
+  font-family: 'figtree' , sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: var(--Yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 25em;
+  padding: 1rem;
+  background-color: var(--White);
+  border-radius:1rem ;
+  box-shadow: 0.5em 0.5em  rgb(0,0,0);
+  border: 1px solid var(--Gray950);
+
+}
+.svg{
+  padding: 0.1em 0em 1em 0em;
+}
+.svg img{
+  width: 100%;
+  border-radius: 1em;
+  
+}
+button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Yellow);
+  color: var(--Gray950);
+  font-weight: 800;
+  font-size: 15px;
+}
+.content{
+  padding: 1em 0.5em 0em;
+}
+.date{
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+.content h2{
+  color: var(--Gray950);
+  margin: 15px 0;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.content .description{
+  color: var(--Gray500);
+  width: 90%;
+  font-size: 1.1em;
+}
+
+.final {
+  display:flex;
+  padding: 1.5em 0;
+  align-items: center;
+  
+}
+.final img{
+  width: 10%;
+}
+.final p{
+  margin: 0 20px;
+  font-weight: 900;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .final img {
+    width: 12%;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}
